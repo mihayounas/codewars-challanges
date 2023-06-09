@@ -8,3 +8,8 @@ def make_readable(seconds):
     seconds = seconds % 60
     
     return f"{hours:02d}:{minutes:02d}:{seconds:02d}"
+
+
+# simple 
+def make_readable(s):
+    return '{:02}:{:02}:{:02}'.format(s / 3600, s / 60 % 60, s % 60)
